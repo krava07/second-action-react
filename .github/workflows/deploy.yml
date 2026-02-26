@@ -30,6 +30,5 @@ jobs:
         run: npm ci
       - name: Build project
         run: npm run build
-      - name: Deploy
-        run: echo "Deploying to production..." # Replace with actual deployment command
-        
+      - name: Output github context
+        run: echo "GITHUB_CONTEXT ${{ toJson(github) }}"
