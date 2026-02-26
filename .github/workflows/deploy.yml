@@ -45,4 +45,4 @@ jobs:
       - name: Build project
         run: npm run build
       - name: Output github context
-        run: echo "GITHUB_CONTEXT ${{ toJson(github) }}"
+        run: echo toJson(github.event)
